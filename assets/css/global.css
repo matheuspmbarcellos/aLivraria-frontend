@@ -1,0 +1,76 @@
+html, body {
+  /* Resetando */
+    margin: 0;
+    padding: 0;
+    background-color: #E8F0F3;
+    font-family: "Minha fonte", Tahoma, sans-serif;
+}
+
+@font-face {
+  font-family: Minha fonte;
+  src: url(../Fonte/andale-mono.ttf);   
+}
+
+
+
+/* Estilos para a barra no topo */
+.top-bar {
+    background-color: #200000; /* Cor de fundo da barra */
+    padding: 10px; /* Espaçamento interno */
+    display: flex; /* Exibir os elementos em linha */
+    align-items: center; /* Centralizar verticalmente */
+  }
+  
+  /* Estilos para o nome da página (logomarca) */
+  .page-name {
+    margin-right: auto; /* Alinhar à direita */
+    margin-left: 25px; /* Alinha à esquerda */
+    font-size: 30px; /* Tamanho da fonte */
+    color: #E8F0F3; /* Cor da fonte */
+  }
+
+  .search-container {
+    position: relative; /* Posição relativa para alinhar o ícone e o input */
+    display: flex; /* Exibir os elementos em linha */
+    align-items: center; /* Centralizar verticalmente */
+  }
+
+  label {
+    position: absolute;
+    left: 10px; /* posição do Ícone de Busca */
+  }
+
+  .search-icon {
+    text-decoration: none; /* Remover decoração de link */
+    margin-right: 5px; /* Margem à direita do ícone de pesquisa */
+    cursor: url('../img/bxs-book.svg'), pointer; /* Cursor livro ao passar no Ícone de Busca */
+  }  
+  
+  /* Estilos para o campo de pesquisa */
+  .search-bar {
+    border: none; /* Remover bordas */
+    border-bottom: 2px solid #E8F0F3; /* Adicionar uma linha inferior */
+    background-color: transparent; /* Fundo transparente */
+    margin: 0 10px; /* Margens horizontal */
+    padding: 5px; /* Espaçamento interno */
+    width: 320px; /* Largura do campo de pesquisa */
+    outline: none; /* Ao clicar, não aparece borda */
+    color: #E8F0F3; /* Cor do texto que o usuário vai digitar */
+    text-align: center; /* Centraliza o placeholder do input */
+    font-family: "Minha fonte", Tahoma, sans-serif;
+    font-weight: bold;
+  }
+
+  .search-bar::placeholder {
+    text-align: center;
+    font-weight: lighter;
+    color: #e8f0f3b9;
+  }
+
+  /* Estilos para o ícone de usuário */
+  .user-icon {
+    margin-left: auto; /* Alinhar à esquerda */
+    margin-right: 25px; /* Alinhar à direita */
+  }
+
+  

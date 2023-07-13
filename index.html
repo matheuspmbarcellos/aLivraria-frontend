@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/global.css" rel="stylesheet">
+    <link href="./assets/css/lista-livros.css" rel="stylesheet">
+    <link href="./assets/css/cadastro-livro.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <title>aLivraria</title>
+</head>
+<body>
+  <div class="top-bar"> 
+      <div class="page-name">
+        <a href="" style="text-decoration: none; color: #E8F0F3" >a<b>Livraria</b></a>
+      </div>
+      <div class="search-container">
+        <!--O "botão da lupa se encontra abaixo, na verdade ele é uma imagem dentro de uma tag
+          <a>, aí é só você colocar um id="algum nome", que funciona-->
+        <label><a onclick="fetchLivros()" class="search-icon"><img src="./assets/img/bx-search-alt-2.svg" alt="Ícode de Busca>"></a></label>
+        <input type="text" id="search-input" class="search-bar" placeholder="Buscar livro">
+      </div>
+      <div class="user-icon">
+        <a href="#/Cadastrar"><img src="./assets/img/bx-plus-circle.svg" alt="Ícone do Usuário"></a>
+      </div>
+  </div>
+
+  <div id="content" class="content">
+
+  </div>
+
+</body>
+</html>
