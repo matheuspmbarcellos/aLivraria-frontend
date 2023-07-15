@@ -1,7 +1,7 @@
 // Mapeamento de rotas
 const routes = {
     '': './assets/pages/lista-livros.html',
-    '/Buscar': './assets/pages/busca.html',
+    '/Buscar': './assets/pages/lista-livros.html',
     '/Cadastrar': './assets/pages/cadastro-livro.html',
     '/Detalhes': './assets/pages/detalhes.html'
 };

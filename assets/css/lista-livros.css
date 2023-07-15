@@ -19,3 +19,11 @@
     tr:nth-child(even) {
         background-color: white;
     }  
+
+    .valor-monetario {
+        text-align: right;
+    }
+
+    .valor-monetario::before {
+        content: "R$";
+    }

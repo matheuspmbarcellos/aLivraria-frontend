@@ -3,7 +3,8 @@
     <h3>Adicionar novo livro</h3>
     <!-- Abaixo temos os inputs que o usuário vai digitar, dentro ta tag <form>, mesma coisa, acho que colocando
       um id, ele já funciona-->
-    <form id="livroForm" action="" enctype="multipart/form-data">
+      <!-- <form id="livroForm" onsubmit="addBook(event)" enctype="multipart/form-data"> -->
+      <form id="livroForm" action="" enctype="multipart/form-data">
         <input id="titulo" class="typed-text" type="text" placeholder="Título" required>
         <input id="autoria" class="typed-text" type="text" placeholder="Autoria" required>
         <input id="editora" class="typed-text" type="text" placeholder="Editora" required>
@@ -11,9 +12,17 @@
           <span class="dropdown">
             <select id="categoria" required>
                 <option value="" disabled selected>Categoria</option>
-                <option value="INFORMATICA">INFORMATICA</option>
-                <option value="Ficcção Científica">Ficcção Científica</option>
-                <option value="Suspense">Suspense</option>
+                <option value="ADMINISTRACAO">ADMINISTRAÇÃO</option>
+                <option value="BIOLOGIA">BIOLOGIA</option>
+                <option value="CIENCIA_POLITICA">CIÊNCIA POLÍTICA</option>
+                <option value="CIENCIAS_EXATAS">CIÊNCIAS EXATAS</option>
+                <option value="CONTABILIDADE">CONTABILIDADE</option>
+                <option value="DIDATICO">DIDÁTICO</option>
+                <option value="ECONOMIA">ECONOMIA</option>
+                <option value="ENGENHARIA">ENGENHARIA</option>
+                <option value="FILOSOFIA">FILOSOFIA</option>
+                <option value="INFORMATICA">INFORMÁTICA</option>
+                <option value="PSICOLOGIA">PSICOLOGIA</option>
             </select>
           </span>
         <input id="isbn" class="typed-text" type="text" placeholder="ISBN">
@@ -26,9 +35,10 @@
         <!--Botão de Anexar abaixo, porém, ele só serve de enfeite
         se fosse guardar uma imagem para aparecer na tela depois, teria que
       mexer no back-end e criar uma outra camada controller para guardar a imagem-->
-        <label for="arquivo" class="anx">Anexar</label>
-        <input type="file" name="arquivo" id="arquivo" accept="image/jpeg">
+        <label for="capa" class="anx">Anexar</label>
+        <input type="file" name="capa" id="capa" accept="image/jpeg">
         <!--Botão Adicionar abaixo, lembrando que ele ta dentro do <form> também-->
+        <!-- <button type="submit" class="btn-add">Adicionar</button> -->
         <button type="submit" class="btn-add" onclick="formCompleto()">Adicionar</button>
       </form>
       <div id="content">
