@@ -1,6 +1,6 @@
 // CÓDIGO PARA DETALHAMENTO
 function fetchLivroDetails (livroId) {
-    window.location.hash = "/Detalhes"    
+    window.location.hash = "/Detalhes";
         
     let url = `http://localhost:8080/api/livros/detalhar/${livroId}`;
     fetch(url, {
@@ -9,8 +9,10 @@ function fetchLivroDetails (livroId) {
     .then(response => response.json())
     .then(data => {
             document.querySelector('#livro-id').innerText = `ID: ${data.id}`;
+            document.querySelector('#livro-isbn').innerText = `ISBN: ${data.isbn}`;
             document.querySelector('#livro-titulo').innerText = `Título: ${data.titulo}`;
             document.querySelector('#livro-autoria').innerText = `Autoria: ${data.autoria}`;
+            document.querySelector('#livro-editora').innerText = `Editora: ${data.editora}`;
             document.querySelector('#livro-categoria').innerText = `Categoria: ${data.categoria}`;
             document.querySelector('#livro-preco').innerText = `Preço: ${data.precoVenda.toFixed(2)}`;
             document.querySelector('#livro-quantidade').innerText = `Quantidade: ${data.quantidade}`;
